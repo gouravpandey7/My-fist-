@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Game Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>AI Game Recommender</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Chat Container -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat with AI</h2>
+                <button id="newRecommendation" class="btn">
+                    <i class="fas fa-sync-alt"></i> New Recommendation
+                </button>
+            </div>
+            <div id="chatMessages" class="chat-messages">
+                <div class="message bot">
+                    <p>Hello! I'm your game recommendation assistant. I can help you find the perfect game based on your preferences. What type of games do you enjoy playing?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Type your message here...">
+                <button id="sendButton">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Game Display -->
+        <div id="gameDisplay" class="game-display">
+            <!-- Game content will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
